@@ -4,6 +4,7 @@ export const useUserStore = defineStore('user', {
   state: () => ({
     name: localStorage.getItem('current-user'),
     isAdmin: false,
+    role: 'admin' // admin, supervisor, colaborador
   }),
   getters: {
     isLogged: (state) => state.name||false,
