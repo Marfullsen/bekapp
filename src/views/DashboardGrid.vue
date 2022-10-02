@@ -44,7 +44,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: green;
+  background-color: #3c643a;
   aspect-ratio: 1;
 }
 
