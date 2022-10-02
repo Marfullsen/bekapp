@@ -8,6 +8,7 @@
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
       </svg>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item username-ribbon">Hola, <span>{{ user.name }}</span></a></li>
         <li><a class="dropdown-item" href="#">Cambiar clave</a></li>
         <li><a class="dropdown-item" href="#">Mi empresa</a></li>
         <li><a class="dropdown-item" href="#">Administrar usuario</a></li>
@@ -26,6 +27,10 @@
 import { useUserStore } from "../stores/user";
 
   export default {
+    setup() {
+      const user = useUserStore()
+      return {user}
+    },
     methods: {
       logout() {
         const user = useUserStore();
@@ -46,5 +51,10 @@ import { useUserStore } from "../stores/user";
   .router-view {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .username-ribbon {
+    background-color: #225922;
+    color: #f9cd19;
   }
 </style>
