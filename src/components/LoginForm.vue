@@ -53,13 +53,15 @@ function setUser() {
             v-model="inputUserPassword"
             required
           />
-          <span class="input-group-text" id="inputGroupPrepend">
+          <span class="input-group-text" id="inputGroupPrepend" @click="inputPassword.showPassword = !inputPassword.showPassword">
             <img
-              @click="inputPassword.showPassword = !inputPassword.showPassword"
-              :src="inputPassword.showPassword
-                ?'src/assets/eye-striked.svg'
-                :'src/assets/eye-open.svg'"
-              :alt="inputPassword.showPassword? 'hide' : 'show'">
+              v-show="inputPassword.showPassword"
+              src="../assets/eye-striked.svg"
+              alt="hide"/>
+            <img
+              v-show="!inputPassword.showPassword"
+              src="../assets/eye-open.svg"
+              alt="show"/>
           </span>
           <div class="invalid-feedback">
             Contraseña inválida.
