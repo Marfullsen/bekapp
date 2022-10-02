@@ -7,15 +7,14 @@ const user = useUserStore();
 
 <template>
   <section class="container">
-    <LoginForm v-if="!user.name" />
-    <DashboardGrid v-else />
+    <LoginForm/>
   </section>
 </template>
 
 <script>
 import DropDown from "../components/DropDown.vue";
 import LoginForm from "../components/LoginForm.vue";
-import DashboardGrid from "../components/DashboardGrid.vue";
+import DashboardGrid from "./DashboardGrid.vue";
 
 export default {
   components: {
