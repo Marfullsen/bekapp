@@ -5,11 +5,13 @@ import { useRouter, useRoute } from "vue-router";
 
 const user = useUserStore();
 const inputUserName = ref("");
+const inputUserPassword = ref("");
 const router = useRouter();
 const route = useRoute();
 
 function setUser() {
-  user.$patch({ name: inputUserName });
+  user.login(inputUserName, inputUserPassword);
+  //user.$patch({ name: inputUserName, isLogged: true });
   router.push({
     name: "dashboard",
   });
@@ -36,6 +38,8 @@ function setUser() {
           class="form-control"
           id="inputPassword"
           placeholder="Ingresa contraseña"
+          autocomplete="beka-password"
+          v-model="inputUserPassword"
         />
       </div>
       <div class="mb-3 d-flex flex-row-reverse">
