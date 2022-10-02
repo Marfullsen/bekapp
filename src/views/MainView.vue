@@ -1,14 +1,27 @@
 <script setup>
-import DropDown from '../components/DropDown.vue';
-import LoginForm from '../components/LoginForm.vue';
+import { useUserStore } from "../stores/user";
+
+const user = useUserStore();
+
 </script>
 
 <template>
   <section class="container">
-    <LoginForm/>
+    <LoginForm v-if="!user.name" />
+    <DashboardGrid v-else />
   </section>
 </template>
 
-<style scoped>
+<script>
+import DropDown from "../components/DropDown.vue";
+import LoginForm from "../components/LoginForm.vue";
+import DashboardGrid from "../components/DashboardGrid.vue";
 
-</style>
+export default {
+  components: {
+    DropDown, LoginForm, DashboardGrid
+  },
+};
+</script>
+
+<style scoped></style>
