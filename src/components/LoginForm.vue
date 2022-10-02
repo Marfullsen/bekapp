@@ -24,24 +24,47 @@ function setUser() {
       <img src="../assets/logo_beka.webp" alt="logo" style="width: 225px">
       <div class="mb-3">
         <label for="inputEmail" class="form-label">Correo Electrónico</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputEmail"
-          placeholder="Ingresa Email"
-          v-model="inputUserName"
-        />
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input
+            type="text"
+            class="form-control"
+            :class="inputUsuario"
+            id="inputEmail"
+            placeholder="Ingresa Email"
+            v-model="inputUserName"
+            required
+          />
+          <div class="invalid-feedback">
+            Credenciales inválidas.
+          </div>
+        </div>
       </div>
       <div class="mb-3">
         <label for="inputPassword" class="form-label">Contraseña</label>
-        <input
-          type="password"
-          class="form-control"
-          id="inputPassword"
-          placeholder="Ingresa contraseña"
-          autocomplete="beka-password"
-          v-model="inputUserPassword"
-        />
+        <div class="input-group has-validation">
+          <input
+            :type="inputPassword.showPassword? 'text' : 'password'"
+            class="form-control"
+            :class="inputPassword"
+            id="inputPassword"
+            placeholder="Ingresa contraseña"
+            autocomplete="beka-password"
+            v-model="inputUserPassword"
+            required
+          />
+          <span class="input-group-text" id="inputGroupPrepend">
+            <img
+              @click="inputPassword.showPassword = !inputPassword.showPassword"
+              :src="inputPassword.showPassword
+                ?'src/assets/eye-striked.svg'
+                :'src/assets/eye-open.svg'"
+              :alt="inputPassword.showPassword? 'hide' : 'show'">
+          </span>
+          <div class="invalid-feedback">
+            Contraseña inválida.
+          </div>
+        </div>
       </div>
       <div class="mb-3 d-flex flex-row-reverse">
         <a href="/">Olvidé la clave</a>
@@ -58,6 +81,19 @@ export default {
   setup() {
     return {};
   },
+  data() {
+  return {
+    inputUsuario: {
+      active: false,
+      'is-invalid': false
+    },
+    inputPassword: {
+      active: false,
+      'is-invalid': false,
+      showPassword: false
+    }
+  }
+}
 };
 </script>
 
