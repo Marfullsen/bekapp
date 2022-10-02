@@ -1,13 +1,37 @@
+<script setup>
+import { ref } from 'vue'
+import { useUserStore } from "../stores/user";
+
+const user = useUserStore();
+const inputUserName = ref('')
+
+function setUser() {
+  user.$patch({name: inputUserName})
+}
+
+</script>
+
 <template>
-  <section class="container" style="width: 18rem;">
-    <form class="container py-4 px-3 m-auto">
+  <section class="container" style="width: 18rem">
+    <form class="container py-4 px-3 m-auto" @submit.prevent="setUser">
       <div class="mb-3">
         <label for="inputEmail" class="form-label">Correo Electrónico</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa Email">
+        <input
+          type="text"
+          class="form-control"
+          id="inputEmail"
+          placeholder="Ingresa Email"
+          v-model="inputUserName"
+        />
       </div>
       <div class="mb-3">
         <label for="inputPassword" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Ingresa contraseña">
+        <input
+          type="password"
+          class="form-control"
+          id="inputPassword"
+          placeholder="Ingresa contraseña"
+        />
       </div>
       <div class="mb-3 d-flex flex-row-reverse">
         <a href="/">Olvidé la clave</a>
@@ -21,12 +45,10 @@
 
 <script>
 export default {
-  setup () {
-    
-
-    return {}
-  }
-}
+  setup() {
+    return {};
+  },
+};
 </script>
 
 <style scoped>
