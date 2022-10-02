@@ -1,14 +1,19 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 import { useUserStore } from "../stores/user";
+import { useRouter, useRoute } from "vue-router";
 
 const user = useUserStore();
-const inputUserName = ref('')
+const inputUserName = ref("");
+const router = useRouter();
+const route = useRoute();
 
 function setUser() {
-  user.$patch({name: inputUserName})
+  user.$patch({ name: inputUserName });
+  router.push({
+    name: "dashboard",
+  });
 }
-
 </script>
 
 <template>
