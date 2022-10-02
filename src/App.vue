@@ -13,7 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
       </svg>
     </router-link>
   </nav>
-  <router-view />
+  <router-view class="router-view"/>
 </template>
 
 <style scoped>
@@ -21,5 +21,10 @@ import HelloWorld from './components/HelloWorld.vue'
     display: flex;
     justify-content: space-around;
     padding-top: 0.51rem;
+  }
+
+  .router-view {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 </style>
