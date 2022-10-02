@@ -21,6 +21,7 @@ function setUser() {
 <template>
   <section class="container" style="width: 18rem">
     <form class="container py-4 px-3 m-auto" @submit.prevent="setUser">
+      <img src="../assets/logo_beka.webp" alt="logo" style="width: 225px">
       <div class="mb-3">
         <label for="inputEmail" class="form-label">Correo Electrónico</label>
         <input
