@@ -1,11 +1,14 @@
 <script setup>
 import DropDown from '../components/DropDown.vue';
+import LoginForm from '../components/LoginForm.vue';
 </script>
 
 <template>
-  <div class="container py-4 px-3 mx-auto">
-    <h1>Yeppppp</h1>
-    <button class="btn btn-primary">Súper Botón</button>
-  </div>
-  <drop-down></drop-down>
+  <section class="container">
+    <LoginForm/>
+  </section>
 </template>
+
+<style scoped>
+
+</style>
