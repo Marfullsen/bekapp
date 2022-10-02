@@ -2,16 +2,34 @@ import { defineStore } from 'pinia'
 
 export const useUserStore = defineStore('user', {
   state: () => ({
-    count: 0,
-    name: null,
+    name: localStorage.getItem('current-user'),
     isAdmin: false,
   }),
   getters: {
-    doubleCount: (state) => state.count * 2,
+    isLogged: (state) => state.name||false,
   },
   actions: {
-    increment() {
-      this.count++
+    async login(username, password) {
+      this.name = username.value
+      try {
+        const requestOptions = {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(
+            {
+              username,
+              password
+            }
+          )
+        };
+        this.userData = await fetch("api/login", requestOptions)
+      } catch (error) {
+        console.log('Error al intentar iniciar sesión.')
+        return error
+      }
+    },
+    logout() {
+      this.name = null;
     },
   },
 })
