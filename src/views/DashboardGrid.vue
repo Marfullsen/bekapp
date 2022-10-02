@@ -1,11 +1,11 @@
 <template>
   <div class="wrapper noselect">
-    <div class="">Cliente</div>
-    <div class="">Stock</div>
-    <div class="">Informes</div>
-    <div class="">Inventarios</div>
-    <div class="">Ingreso</div>
-    <div class="">Egreso</div>
+    <div @click="routerPushTo('cliente')">Cliente</div>
+    <div @click="routerPushTo('stock')">Stock</div>
+    <div @click="routerPushTo('informes')">Informes</div>
+    <div @click="routerPushTo('inventarios')">Inventarios</div>
+    <div @click="routerPushTo('ingreso')">Ingreso</div>
+    <div @click="routerPushTo('egreso')">Egreso</div>
   </div>
 </template>
 
@@ -14,6 +14,16 @@ export default {
   setup() {
     return {};
   },
+  methods: {
+    routerPushTo(route) {
+      const isAuthenticated = true;
+      if (isAuthenticated) {
+        this.$router.push(route)
+      } else {
+        this.$router.push('/login')
+      }
+    },
+  }
 };
 </script>
 
