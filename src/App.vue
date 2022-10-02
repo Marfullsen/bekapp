@@ -1,6 +1,7 @@
 <script setup>
 import { useUserStore } from "./stores/user";
 const user = useUserStore();
+window.stores = user
 </script>
 
 <template>
