@@ -2,6 +2,7 @@
 
 # Current date
 timestamp=$(date +%Y-%m-%d' '%H:%M)
+commit=$(git log -1 --pretty=%B)
 
 # abort on errors
 set -e
@@ -20,7 +21,7 @@ cp index.html 404.html
 
 git init
 git add -A
-git commit -m "deploy at $timestamp"
+git commit -m "$timestamp $commit"
 
 git push -f https://github.com/Marfullsen/bekapp.git master:gh-pages
 
