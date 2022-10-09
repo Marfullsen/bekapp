@@ -12,6 +12,7 @@ export const useUserStore = defineStore('user', {
   actions: {
     async login(username, password) {
       this.name = username.value
+      localStorage.setItem('current-user', this.name)
       try {
         const requestOptions = {
           method: "POST",
@@ -31,6 +32,7 @@ export const useUserStore = defineStore('user', {
     },
     logout() {
       this.name = null;
+      localStorage.removeItem('current-user')
     },
   },
 })
