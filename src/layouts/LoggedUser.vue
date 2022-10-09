@@ -17,8 +17,6 @@
         <li><a class="dropdown-item" @click="logout">Salir</a></li>
       </ul>
     </div>
-    <router-link to="/about">
-    </router-link>
   </nav>
   <router-view class="router-view"/>
 </template>
