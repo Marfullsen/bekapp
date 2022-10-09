@@ -1,5 +1,5 @@
 <template>
-  <section class="container vh100 d-flex">
+  <section class="container vh80 d-flex">
     <LoginForm/>
   </section>
 </template>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-.vh100 {
-  height: 100vh;
+.vh80 {
+  height: 80vh;
 }
 </style>
