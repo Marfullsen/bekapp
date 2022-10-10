@@ -8,7 +8,7 @@
         </div>
         <label for="inputEmail" class="form-label">Correo Electrónico</label>
         <div class="input-group has-validation">
-          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
           <input
             type="text"
             class="form-control"
