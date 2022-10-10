@@ -20,7 +20,7 @@ export default {
       if (isAuthenticated) {
         this.$router.push(route)
       } else {
-        this.$router.push('/login')
+        this.$router.push('/')
       }
     },
   }
