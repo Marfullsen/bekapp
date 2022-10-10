@@ -37,7 +37,6 @@ export default {
 }
 
 .wrapper div {
-  font-family: fantasy;
   font-size: xx-large;
   cursor: pointer;
   display: flex;
