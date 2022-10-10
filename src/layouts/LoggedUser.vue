@@ -31,9 +31,8 @@ import { useUserStore } from "../stores/user";
     },
     methods: {
       logout() {
-        const user = useUserStore();
-        user.logout()
-        this.$router.push('/login')
+        useUserStore().logout()
+        this.$router.push('/')
       }
     }
   };
