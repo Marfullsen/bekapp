@@ -51,10 +51,21 @@
           </div>
         </div>
       </div>
-      <div class="mb-3 d-flex flex-row-reverse">
-        <a href="/">Olvidé la clave</a>
+      <div class="d-flex flex-row-reverse">
+        <p>
+          <a class="" data-bs-toggle="collapse" href="#collapsePassword" role="button" aria-expanded="false" aria-controls="collapsePassword">
+            Olvidé la clave.
+          </a>
+        </p>
       </div>
-      <div class="d-flex justify-content-center">
+      <div class="collapse" id="collapsePassword">
+        <div class="alert alert-info" role="alert">
+          Credenciales de prueba: <br/>
+          Usuario: ico <br/>
+          Contraseña: 123
+        </div>
+      </div>
+      <div class="mt-3 d-flex justify-content-center">
         <button type="submit" class="btn btn-primary px-4">Ingresar</button>
       </div>
     </form>
