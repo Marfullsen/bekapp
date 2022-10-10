@@ -20,7 +20,7 @@ export const useUserStore = defineStore('user', {
       const response = await Promise.resolve(username) //fetch("api/login", requestOptions);
 
       // Usuario de prueba.
-      if (username == 'ico' && password == '123') {
+      if (username.toLowerCase() == 'ico' && password == '123') {
         this.name = username;
         localStorage.setItem('current-user', this.name);
         return true
