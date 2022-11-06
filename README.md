@@ -76,7 +76,6 @@ npm install
 Para levantar el FrontEnd en modo desarrollo.
 
 ```sh
-cd client
 npm run dev
 ```
 
