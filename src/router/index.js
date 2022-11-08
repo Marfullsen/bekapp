@@ -13,6 +13,7 @@ import StockHerramientas from "../views/stock/StockHerramientas.vue";
 import StockUniformes from "../views/stock/StockUniformes.vue";
 import RiegoMaterial from "../views/stock/RiegoMaterial.vue";
 
+import seeInformes from "../views/informes/seeInformes.vue";
 
 const routes = [
   // Rutas de la página.
@@ -33,6 +34,10 @@ const routes = [
   { path: "/stock/consumibles", name: "stock_consumibles", component: StockConsumibles },
   { path: "/stock/herramientas", name: "stock_herramientas", component: StockHerramientas },
   { path: "/stock/uniformes", name: "stock_uniformes", component: StockUniformes },
+
+  // Informes.
+  { path: "/informes", name: "informes", component: seeInformes },
+
 
   {
     path: '/:pathMatch(.*)*',
