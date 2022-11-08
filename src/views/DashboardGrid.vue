@@ -3,7 +3,7 @@
     <div @click="routerPushTo('cliente')">Cliente</div>
     <div @click="routerPushTo('stock')">Stock</div>
     <div @click="routerPushTo('informes')">Informes</div>
-    <div @click="routerPushTo('inventarios')">Inventarios</div>
+    <div @click="routerPushTo('inventario')">Inventario</div>
     <div @click="routerPushTo('ingreso')">Ingreso</div>
     <div @click="routerPushTo('egreso')">Egreso</div>
   </div>

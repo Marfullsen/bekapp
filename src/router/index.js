@@ -15,6 +15,9 @@ import RiegoMaterial from "../views/stock/RiegoMaterial.vue";
 
 import seeInformes from "../views/informes/seeInformes.vue";
 
+import SeeInventario from "../views/inventario/SeeInventario.vue";
+import CreateInventario from "../views/inventario/CreateInventario.vue";
+
 const routes = [
   // Rutas de la página.
   // { path: "/", name: "", component:  },
@@ -38,6 +41,9 @@ const routes = [
   // Informes.
   { path: "/informes", name: "informes", component: seeInformes },
 
+  // Inventario.
+  { path: "/inventario", name: "inventario", component: SeeInventario },
+  { path: "/inventario/nuevo", name: "create-inventario", component: CreateInventario },
 
   {
     path: '/:pathMatch(.*)*',
