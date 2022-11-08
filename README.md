@@ -152,6 +152,11 @@ Para pasar a producción, alojar la base de datos, el front y el back en alguna 
     <img src="./docs/img/Beka-Informes.png" alt="Informes">
   </a>
 
+
+---
+
+### Inventarios
+
   <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
     <img src="./docs/img/Beka-Inventarios.png" alt="Inventarios">
   </a>
