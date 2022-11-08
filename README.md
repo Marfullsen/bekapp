@@ -122,17 +122,31 @@ Para pasar a producción, alojar la base de datos, el front y el back en alguna 
   </a>
   -->
 
+### Principal
+
   <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
     <img src="./docs/img/Beka-Principal.png" alt="Principal">
   </a>
+
+---
+
+### Clientes
 
   <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
     <img src="./docs/img/Beka-Clientes.png" alt="Clientes">
   </a>
 
+---
+
+### Stock
+
   <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
     <img src="./docs/img/Beka-Stock.png" alt="Stock">
   </a>
+
+---
+
+### Informes
 
   <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
     <img src="./docs/img/Beka-Informes.png" alt="Informes">
@@ -142,9 +156,17 @@ Para pasar a producción, alojar la base de datos, el front y el back en alguna 
     <img src="./docs/img/Beka-Inventarios.png" alt="Inventarios">
   </a>
 
+---
+
+### Ingreso
+
   <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
     <img src="./docs/img/Beka-Ingreso.png" alt="Ingreso">
   </a>
+
+---
+
+### Egreso
 
   <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
     <img src="./docs/img/Beka-Egreso.png" alt="Egreso">
