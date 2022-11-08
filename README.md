@@ -113,6 +113,44 @@ Para pasar a producción, alojar la base de datos, el front y el back en alguna 
 - [Nelson Marfull](https://github.com/NelsonMarfull) - Programador BackEnd.
 - [Marfullsen](https://github.com/Marfullsen) - Programador FrontEnd.
 
+## Mockups
+
+<div align="center">
+  <!-- Referencia para más mockups.
+  <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
+    <img src="./docs/img/Beka-.png" alt="">
+  </a>
+  -->
+
+  <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
+    <img src="./docs/img/Beka-Principal.png" alt="Principal">
+  </a>
+
+  <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
+    <img src="./docs/img/Beka-Clientes.png" alt="Clientes">
+  </a>
+
+  <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
+    <img src="./docs/img/Beka-Stock.png" alt="Stock">
+  </a>
+
+  <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
+    <img src="./docs/img/Beka-Informes.png" alt="Informes">
+  </a>
+
+  <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
+    <img src="./docs/img/Beka-Inventarios.png" alt="Inventarios">
+  </a>
+
+  <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
+    <img src="./docs/img/Beka-Ingreso.png" alt="Ingreso">
+  </a>
+
+  <a href="https://marfullsen.github.io/bekapp/" rel="noopener">
+    <img src="./docs/img/Beka-Egreso.png" alt="Egreso">
+  </a>
+</div>
+
 ## 🎉 Reconocimientos, agreadecimientos y más. <a name = "acknowledgement"></a>
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
